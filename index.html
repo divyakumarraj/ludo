@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+       
+        body ,html{
+            background: url(https://mobimg.b-cdn.net/v3/fetch/17/1797c1dba4f31fd99b5fd0a2146f2e13.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            
+        }
+        .form{
+            margin: auto;
+            width: 300px;
+            margin-top: 150px;
+            border: rgb(145, 133, 133) 2px solid;
+            padding: 30px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        #register{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 300px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: aliceblue;
+        }
+        #register input{
+            height: 20px;
+            border-radius: 5px;
+            background-color: whitesmoke;
+        }
+           #button 
+        {
+            background-color: silver;
+            margin: auto;
+            width: 100px;
+            height: 40px;
+            border-radius: 5px;
+            font-weight: bolder;
+            text-align: center;
+            line-height: 40px;
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    
+      <div class="head">
+
+		 <div class="form">
+            <form id='register' class='input-group-register'>
+               <p> Enter the name of first player-1:</p> 
+                <input type='text'class='input-field'placeholder='Enter ur name' required id="p1">
+                <br>
+                <p> Enter the name of first player-2:</p> 
+                <input type='text'class='input-field'placeholder='Enter ur name' required id="p2">
+                
+                <p>I agree to the terms and conditions of Game</p>
+                <input type='checkbox'class='check-box'>
+                <br>
+                     <a href="./player.html" id="button" >Enter</a>
+                </form>
+         
+         </div>
+      </div>
+      <script>
+
+     function js(){
+        var player1=document.getElementById(p1);
+        var player2=document.getElementById(p2);
+        alert("success");
+     }
+     
+    
+      </script>
+  
+</body>
+</html>
