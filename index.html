@@ -40,7 +40,7 @@
             border-radius: 5px;
             background-color: whitesmoke;
         }
-           #button 
+           .input[type=submit] 
         {
             background-color: silver;
             margin: auto;
@@ -60,22 +60,23 @@
       <div class="head">
 
 		 <div class="form">
-            <form id='register' class='input-group-register'>
+            <form id='register' class='input-group-register' action="player.html">
                <p> Enter the name of first player-1:</p> 
-                <input type='text'class='input-field'placeholder='Enter ur name' required id="p1">
+                <input type='text'class='input-field'placeholder='Enter ur name'  id="p11">
                 <br>
                 <p> Enter the name of first player-2:</p> 
-                <input type='text'class='input-field'placeholder='Enter ur name' required id="p2">
+                <input type='text'class='input-field'placeholder='Enter ur name'  id="p22">
                 
                 <p>I agree to the terms and conditions of Game</p>
                 <input type='checkbox'class='check-box'>
                 <br>
-                     <a href="./player.html" id="button" >Enter</a>
+                     <!-- <a href="./player.html" id="button" value="click" onclick="passvalues(); " >Enter</a> -->
+                     <input type="submit" value="click me!"  onclick="passvalues();">
                 </form>
          
          </div>
       </div>
-      <script>
+ <!--      <script>
 
      function js(){
         var player1=document.getElementById(p1);
@@ -85,6 +86,16 @@
      
     
       </script>
-  
+ -->  
+ <script >
+     function passvalues()
+     {
+        var firstname=document.getElementById("p11") .value;
+        var secondname=document.getElementById("p22").value;
+        localStorage.setItem("textvalue",firstname,"textvalue2",secondname);
+         localStorage.setItem("textvalue2",secondname);
+        return false;
+     }
+ </script>
 </body>
 </html>
