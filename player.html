@@ -20,13 +20,19 @@
             <tr>
                 <th>
         <div id="player-1">
-            <h2>Player-1</h2>
+            <h2><span id="result"></span> 
+                <script >
+                    document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+                </script> </h2>
             <img id="P1" src="./images/dice6.png" alt="">
         </div>
     </th>
     <th>
         <div id="player-2">
-            <h2>Player-2</h2>
+            <h2><span id="result2"></span> 
+                <script >
+                    document.getElementById("result2").innerHTML=localStorage.getItem("textvalue2");
+                </script> </h2>
             <img id="P2" src="./images/dice6.png" alt="">
         </div>
     </th>
